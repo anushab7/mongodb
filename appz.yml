@@ -9,10 +9,9 @@ build:
   build_file: none
   output_files: output/*.zip
   image_template: mongo-4.4
-  image_name: alpha/mongodb
 
 deploy:
-  context: alpha/DEV
+  context: anushab7/DEV
   type: statefulset
   ingress: none
   replicas: 1
