@@ -27,4 +27,7 @@ volumes:
   class: microk8s-hostpath    
 
 properties:
+  DB_USER_ADMIN: admin
+  DB_USER_ADMIN_PASSWORD:
+     vault: DB_USER_ADMIN_PASSWORD
   revision : 04
