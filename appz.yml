@@ -1,7 +1,7 @@
 app:
   name: AppzMongoDB
   code: AMDB
-  notify: appz@cloudbourne.co
+  notify: aborra@ecloudcontrol.com
 
 build:
   version: 4.4
@@ -30,4 +30,4 @@ properties:
   DB_USER_ADMIN: admin
   DB_USER_ADMIN_PASSWORD:
      vault: DB_USER_ADMIN_PASSWORD
-  revision : 04
+  revision : 05
