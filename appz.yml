@@ -19,15 +19,14 @@ deploy:
   - 27017
 
 volumes:
+- claim: mongo-config
+  mount: /data/configdb
+  name: config
+  size: 5Gi
 - claim: mongo-data
   mount: /appz/data
-  name: mongo-data
-  size: 5Gi
-  mode: ReadWriteOnce
-  class: microk8s-hostpath    
+  name: data
+  size: 5Gi    
 
 properties:
-  DB_USER_ADMIN: admin
-  DB_USER_ADMIN_PASSWORD:
-     vault: DB_USER_ADMIN_PASSWORD
   revision : 06
