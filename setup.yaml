@@ -1,0 +1,7 @@
+users:
+  - name: mongouser
+    password: $MONGOUSER_PASSWORD
+acl:
+  - database: admin
+    user: mongouser
+    access: dbOwner
