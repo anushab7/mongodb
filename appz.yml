@@ -29,6 +29,6 @@ volumes:
   size: 5Gi    
 
 properties:
-MONGOUSER_PASSWORD:
-   vault: MONGOUSER_PASSWORD:
-revision : 06
+  MONGOUSER_PASSWORD:
+    vault: MONGOUSER_PASSWORD:
+  revision : 06
