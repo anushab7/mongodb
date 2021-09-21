@@ -30,5 +30,5 @@ volumes:
 
 properties:
   MONGOUSER_PASSWORD:
-    vault: MONGOUSER_PASSWORD:
-  revision : 06
+     vault: MONGOUSER_PASSWORD
+  revision : 15
