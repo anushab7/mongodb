@@ -1,6 +1,6 @@
 users:
   - name: testuser
-    password: $MONGOUSER1_PASSWORD
+    password: $MONGOUSER_PASSWORD
   
 acl:
   - database: testdb
