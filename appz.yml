@@ -19,9 +19,9 @@ deploy:
   - 27017
 
 volumes:
-- claim: mclaren-shared-mongo-data
+- claim: mongo-data
   mount: /appz/data
-  name: mclaren-shared-mongo-data
+  name: mongo-data
   size: 5Gi
   mode: ReadWriteOnce    
 
