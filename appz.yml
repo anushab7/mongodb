@@ -1,6 +1,6 @@
 app:
-  name: AppzMongoDB
-  code: AMDB
+  name: MongoDB
+  code: MongoDB
   notify: aborra@ecloudcontrol.com
 
 build:
@@ -19,19 +19,14 @@ deploy:
   - 27017
 
 volumes:
-- claim: mongo-config
-  mount: /data/configdb
-  name: config
-  size: 5Gi
-- claim: mongo-data
+- claim: mclaren-shared-mongo-data
   mount: /appz/data
-  name: data
-  size: 5Gi    
+  name: mclaren-shared-mongo-data
+  size: 5Gi
+  mode: ReadWriteOnce    
 
 properties:
-  DB_USER_ADMIN: admin
+  DB_USER_ADMIN: systemuserdev
   DB_USER_ADMIN_PASSWORD:
      vault: DB_USER_ADMIN_PASSWORD
-  MONGOUSER_PASSWORD:
-     vault: MONGOUSER_PASSWORD
   revision : 15
