@@ -1,8 +1,0 @@
-users:
-  - name: testuser
-    password: $MONGOUSER_PASSWORD
-  
-acl:
-  - database: testdb
-    user: testuser
-    access: dbOwner
