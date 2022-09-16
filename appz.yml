@@ -4,11 +4,11 @@ app:
   notify: aborra@ecloudcontrol.com
 
 build:
-  version: 4.4
+  version: 5.0
   env: DEV
   build_file: none
   output_files: output/*.zip
-  image_template: mongo-4.4
+  image_template: mongo-5-0
 
 deploy:
   context: anushab7/DEV
@@ -29,4 +29,6 @@ properties:
   DB_USER_ADMIN: systemuserdev
   DB_USER_ADMIN_PASSWORD:
      vault: DB_USER_ADMIN_PASSWORD
+  MONGOUSER1_PASSWORD:
+     vault: MONGOUSER1_PASSWORD
   revision : 15
