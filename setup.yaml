@@ -1,0 +1,11 @@
+users:
+  - name: testuser1
+    password: $MONGOUSER1_PASSWORD
+
+databases:
+  - name: testdb
+
+acl:
+  - database: testdb 
+    user: testuser1
+    access: dbOwner
