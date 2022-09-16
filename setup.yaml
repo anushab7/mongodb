@@ -1,6 +1,6 @@
 users:
   - name: testuser1
-    password: $MONGOUSER1_PASSWORD
+    password: $MONGO_TESTUSER1_PASSWORD
 
 databases:
   - name: testdb
